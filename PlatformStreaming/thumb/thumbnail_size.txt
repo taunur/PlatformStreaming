@@ -1,0 +1,3 @@
+Catatan : Untuk Thumbnail ukuran pixel
+
+Web-Large (640 x 480 px)

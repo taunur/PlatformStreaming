@@ -1,0 +1,459 @@
+/* MEDIA QUERRY - FONTS */
+@font-face {
+	font-family: "Alex Brush";
+	src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "FiraSans-Bold";
+	src: url('../fonts/FiraSans-Bold.otf') format('truetype'); 
+}
+
+
+
+/* ----------- Body ----------- */
+body {
+	background-image: url(../bg_logo/movie.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font: 16px/18px arial;
+	z-index: 1;
+}
+
+
+
+/* ^^^^^^^^^^^^ TOP-BAR ^^^^^^^^^^^^ */
+.top-bar {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	z-index: 9999;
+	display: flex;
+}
+
+/* <<<<<<<<<<<<< LOGO >>>>>>>>>>>>> */
+.top-bar .logo {
+	width: 25%;
+	box-sizing: border-box;
+	
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	padding-right: 3px;   
+	
+	line-height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.top-bar .logo img {
+	width: 104px;
+	height: 60px;
+	line-height: 60px;
+	margin-right: 8px;
+}
+
+.top-bar .logo h3 {
+	font-size: 20px;
+	color: white; 
+	font-size: 52px;
+	font-family: "Alex Brush", arial, sans-serif;
+	letter-spacing: 5px;
+	cursor: default;
+}
+
+.top-bar .logo h3:hover {
+	cursor: default;
+}
+
+/* <<<<<<<<<<<<< SEARCH >>>>>>>>>>>>> */
+.top-bar .search {
+	width: 50%;
+	box-sizing: border-box;
+	
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.top-bar .search form {
+	width: 90%;
+	box-sizing: border-box;
+
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+
+	line-height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-bar .search form button {
+	z-index: 4;
+	background-color: transparent;
+	border-radius: 40%;
+	border: none;
+
+	outline: none;
+	box-sizing: border-box;
+	margin-right: -40px;
+}
+
+.top-bar .search form i {
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: transparent;
+	font-size: 20px;
+	
+	border-radius: 50%;
+
+	z-index: 5;
+
+	color: rgba(255, 210, 0, 1);
+}
+
+.top-bar .search form input {
+	height: 30px;
+	width: 80%;
+	outline: none;
+
+	color: white;
+
+	border: 3px solid rgba(255, 210, 0, 1);
+	overflow: hidden;
+
+	border-radius: 15px;
+	z-index: 3;
+
+	padding-left: 32px;
+
+	background-color: transparent;
+}
+
+.top-bar .search form input::placeholder {
+	color: white;
+}
+
+
+
+/* <<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>> */
+.top-bar .navbar {
+	width: 25%;
+	box-sizing: border-box;
+
+	line-height: 60px;
+	text-align: center;
+}
+
+.top-bar .navbar button {
+	height: 60px;
+	width: 60px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+
+	cursor: default;
+}
+
+.top-bar .navbar button i {
+	font-size: 30px;
+	color: rgba(255, 210, 0, 1);
+
+	cursor: pointer;
+}
+
+.top-bar .navbar button i:hover {
+	color: white;
+}
+
+/* dropdown */
+.top-bar .navbar ul li {
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin: 0 auto 5px auto;
+
+	cursor: default;
+}
+
+.top-bar .navbar ul li a{
+	font-weight: bold;
+	color: rgba(255, 210, 0, 1);
+	text-decoration: none;
+}
+
+.top-bar .navbar ul li a:hover {
+	color: white;
+}
+
+/* dropdown ke2 */
+.top-bar .navbar ul ul li {
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 60%;
+	height: 30px;
+	margin: 0 auto 5px auto;
+	line-height: 30px;
+
+	cursor: default;	
+}
+
+.top-bar .navbar ul ul li a{
+	font-weight: bold;
+	color: rgba(255, 210, 0, 1);
+	text-decoration: none;
+}
+
+
+/* BUTTON */
+.button {
+	width: 1000px;
+	margin: 64px auto 5px auto;
+	box-sizing: border-box;	
+}
+
+.button button {
+	border: 3px solid rgba(255, 210, 0, 1);
+	color: rgba(255, 210, 0, 1);
+	background-color: transparent;
+
+	outline: none;
+	cursor: pointer;
+
+	height: 30px;
+	border-radius: 10px;
+
+	font-weight: bold;
+
+}
+
+.button button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* ^^^^^^^^^^^^ CONTAINER ^^^^^^^^^^^^ */
+.container {
+	width: 1000px;
+	margin: 5px auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 3px solid white;
+	box-sizing: border-box;
+	padding : 15px 3px;
+	border-radius: 5px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+}
+
+/* <<<<<<<<<<<< MAIN-CONTENT>>>>>>>>>>>>*/
+.kotak {
+	width: 140px;
+	margin: 20px 12px;
+	border: 2px solid rgba(255, 210, 0, 1);
+	padding-bottom: 8px;
+
+	text-align: center;
+	box-sizing: border-box;
+
+	outline: none;
+}
+
+.kotak a img {
+	margin: 5px auto 2px auto;
+	width: 93%;
+	height: 175px;
+}
+
+.kotak a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.kotak a p {
+	font-size: 12px;
+	color: white;
+}
+/* BUTTON UPDATE - DELETE */ 
+.kotak a button {
+	margin: 0 2px;
+	height: 26px;
+	background-color: transparent;
+	border: 2px solid rgba(255, 210, 0, 1);
+	border-radius: 13px;
+	outline: none;
+
+	color: rgba(255, 210, 0, 1);
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+.kotak a button:hover {
+	border: 2px solid rgba(255, 210, 0, 0.7);
+	color: rgba(255, 210, 0, 0.7);
+
+	cursor: pointer;
+}
+
+
+/* ^^^^^^^^ PAGE ^^^^^^^^ */
+.page {
+	width: 1000px;
+	box-sizing: border-box; 
+	
+	margin: 5px auto 64px auto;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+}
+
+.page a {
+	text-decoration: none;
+}
+
+.page .kotak {
+	width: 40px;
+	height: 40px;
+	
+	box-sizing: border-box;
+	margin: 2px;
+	padding: 0;
+	border-radius: 30%;
+
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 3px solid white;
+	text-align: center;
+	line-height: 35px;
+
+	color: white;
+	font-weight: bold;
+}
+
+.page .kotak:hover {
+	cursor: pointer;
+	border: 3px solid rgba(255, 210, 0, 1);
+	color: rgba(255, 210, 0, 1);
+}
+
+
+/* MEDIA QUERRY - RESPONSIVE */
+@media (max-width: 1020px)  {
+/* ^^^^^^ BODY ^^^^^^ */
+	body {
+		background-repeat: repeat-y;	
+		background-size: cover;
+	}
+
+	/* ^^^^^^^^ TOP-BAR ^^^^^^^^ */
+	.top-bar {
+		width: 100%;
+	}
+
+	.top-bar .logo h3 {
+		display: none;
+	}
+
+/* BUTTON */
+	.button {
+		width: 90%;
+		margin: 64px auto 5px auto;
+		box-sizing: border-box;	
+	}
+
+	.container {
+		width: 90%;
+		margin: 5px auto;
+		background-color: rgba(0, 0, 0, 0.8);
+		border: 3px solid white;
+		box-sizing: border-box;
+		padding : 15px 3px;
+		border-radius: 5px;
+
+		justify-content: space-around;
+	}
+
+	.kotak {
+		margin: 15px 5px;
+	}
+
+/* ^^^^^^^^ PAGE ^^^^^^^^ */
+	.page {
+		width: 90%;
+		box-sizing: border-box; 
+		margin: 5px auto 64px auto;
+		padding: 2px;
+		display: flex;
+		justify-content: center;
+	}
+
+
+
+@media (max-width: 760px) {
+/* ^^^^^^ BODY ^^^^^^ */
+	body {
+		background-repeat: repeat-y;	
+		background-size: cover;
+	}
+
+/* ^^^^^^^^ TOP-BAR ^^^^^^^^ */
+	.top-bar {
+		width: 100%;
+	}
+
+	.top-bar .logo h3 {
+		display: none;
+	}
+
+/* BUTTON */
+	.button {
+		width: 100%;
+		margin: 64px auto 5px auto;
+		box-sizing: border-box;	
+	}
+	
+/* ^^^^^^^^ CONTAINER ^^^^^^^^ */
+	.container {
+		width: 100%;
+		margin: 5px auto;
+		background-color: rgba(0, 0, 0, 0.8);
+		border: 3px solid white;
+		box-sizing: border-box;
+		padding : 15px 3px;
+		border-radius: 5px;
+
+		justify-content: space-around;
+	}
+
+	/* <<<<<<<<<<<< MAIN-CONTENT>>>>>>>>>>>>*/
+	.kotak {
+		margin: 15px 5px;
+	}
+
+/* ^^^^^^^^ PAGE ^^^^^^^^ */
+	.page {
+		width: 90%;
+		box-sizing: border-box; 
+		margin: 5px auto 64px auto;
+		padding: 2px;
+		display: flex;
+		justify-content: center;
+	}

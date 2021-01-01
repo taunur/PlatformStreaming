@@ -1,0 +1,299 @@
+/* MEDIA QUERRY - FONTS */
+@font-face {
+	font-family: "Alex Brush";
+	src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "FiraSans-Bold";
+	src: url('../fonts/FiraSans-Bold.otf') format('truetype'); 
+}
+
+
+
+/* ----------- Body ----------- */
+body {
+	background-image: url(../bg_logo/movie.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font: 16px/18px arial;
+	z-index: 1;
+}
+
+
+
+/* ^^^^^^^^^^^^ TOP-BAR ^^^^^^^^^^^^ */
+.top-bar {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	z-index: 9999;
+	display: flex;
+}
+
+.top-bar .logo {
+	width: 260px;
+	height: 60px;
+	margin-left: 4px;
+	margin-right: 4px;
+	box-sizing: border-box;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	padding-right: 3px;   
+	line-height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.top-bar .logo img {
+	width: 104px;
+	height: 60px;
+	line-height: 60px;
+	margin-right: 8px;
+}
+
+.top-bar .logo h3 {
+	font-size: 20px;
+	color: white; 
+	font-size: 52px;
+	font-family: "Alex Brush", arial, sans-serif;
+	letter-spacing: 5px;
+	cursor: default;
+}
+
+.top-bar .logo h3:hover {
+	cursor: default;
+}
+
+/* ^^^^^^^^^^^^ CONTAINER ^^^^^^^^^^^^ */
+.container {
+	width: 1000px;
+	margin: 64px auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 50px;
+}
+
+.main-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+}
+
+/* <<<<<<<<<<<<< THUMB >>>>>>>>>>>>> */
+.main-content .thumb {
+	width: 60%;
+	border-radius: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+}
+
+/* ----------- MAIN-CONTENT_THUMB_LEFT-BAR ----------- */
+.main-content .thumb .left-bar {
+	width: 50%;
+	border-radius: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0;
+}
+
+.main-content .thumb .left-bar img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+/* ----------- MAIN-CONTENT_THUMB_RIGHT-BAR ----------- */
+											  
+.main-content .thumb .right-bar {
+	width: 50%;
+	border-radius: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0;
+}
+
+.main-content .thumb .right-bar img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+/* ----------- MAIN-CONTENT _ CENTER ----------- */
+.main-content form {
+	width: 40%;
+	margin: 0;
+	padding: 30px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+	border: 2px solid white;
+}
+
+.main-content form h4 {
+	font-size: 76px;
+	color: white; 
+	font-family: "Alex Brush", arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	cursor: default;
+}
+
+.main-content form h4:hover {
+	cursor: default;
+}
+
+.main-content form h6 a {
+	color: white;
+}
+
+
+.main-content form .username label ,
+.main-content form .email label , 
+.main-content form .password label,
+.main-content form .confirm-password label {
+ 	font-size: 16px;
+	color: white; 
+	font-family: "FiraSans-Bold", arial, sans-serif;
+}
+
+.main-content form .username label:hover ,
+.main-content form .email label:hover , 
+.main-content form .password label:hover ,
+.main-content form .confirm-password label:hover {
+	cursor: pointer; 
+}
+
+form .username i ,
+form .email i ,
+form .password i ,
+form .confirm-password i {
+	font-size: 20px;
+	color: white;
+}
+
+.main-content form .username input ,
+.main-content form .email input ,
+.main-content form .password input ,
+.main-content form .confirm-password input {
+	width: 80%;
+	height: 25px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 3px solid black;
+	box-shadow: 0 0 10px 3px black;
+	overflow: hidden;
+	outline: none;
+}
+
+.main-content button {
+	width: 60%;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 1);
+	border: 3px solid white;
+	border-radius: 20px;
+	outline: none;
+
+	color: white;
+	font-size: 16px; 
+	font-family: "FiraSans-Bold", arial, sans-serif;
+}
+
+.main-content button:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 3px solid white;
+}
+
+
+
+
+/* MEDIA QUERRY - RESPONSIVE */
+@media (max-width: 1020px)  {
+/* ^^^^^^ BODY ^^^^^^ */
+	body {
+		background-repeat: repeat-y;	
+		background-size: cover;
+	}
+
+	.container {
+		width: 80%; 
+	}
+
+	.main-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.main-content .thumb {
+		width: 80%;
+	}
+
+	.main-content form {
+		width: 60%;
+		margin: 10px;
+		padding: 30px;
+		border: 50px;
+		box-sizing: border-box;
+		overflow: hidden;
+		text-align: center;
+		border: 2px solid white;
+	}
+}
+
+@media (max-width: 760px) {
+/* ^^^^^^ BODY ^^^^^^ */
+	body {
+		background-repeat: repeat-y;	
+		background-size: cover;
+	}
+	
+	.container {
+		width: 100%;
+	}
+
+	.main-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.main-content .thumb {
+		width: 100%;
+	}
+
+	.main-content form {
+		width: 80%;
+		margin: 10px;
+		padding: 30px;
+		border-radius: 50px;
+		box-sizing: border-box;
+		overflow: hidden;
+		text-align: center;
+		border: 2px solid white;
+	}
+}

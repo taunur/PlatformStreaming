@@ -1,0 +1,96 @@
+<?php  
+// MENGHUBUNGKAN KONEKSI DATABASE
+	require "koneksi.php";
+
+
+// APABILA TOMBOL CONFIRM DITEKAN
+	if( isset($_POST["register"]) ) {
+		
+			if ( registrasi($_POST) > 0 ) {
+				echo "<script>
+						alert ('User baru berhasil ditambahkan');
+					 	document.location.href = 'user_login.php';
+				 	 </script>";	
+			} else {
+				echo mysqli_error($conn);	
+			}
+		}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fil.mi_Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link rel="shortcut icon" href="bg_logo/icon.png">
+
+		<link rel="stylesheet" type="text/css" href="syntax/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/user_register.css">
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	</head>
+	
+	<body>
+		<div class="top-bar">
+			<div class="logo">
+				<img src="bg_logo/Fil.mi.png" alt="Fil.mi" title="Fil.mi">
+				<h3>Fil.mi</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="main-content">
+				<div class="thumb">
+					<div class="left-bar">
+						<img src="thumb/suicidesquad.jpg">
+					</div>
+
+					<div class="right-bar">
+						<img src="thumb/moulinrouge.jpg">
+					</div>
+				</div>
+
+				<form action=" " method="POST" enctype="multipart/form-data">
+					<h4>Register</h4>
+					<br><br>
+					<h6><a href="user_login.php">Already have account ?</h6></a>
+					<br><br><br>
+<!-- fORM -->
+					<div class="username">
+						<i class="fa fa-user"></i>
+						<label for="username">Username</label><br>
+						<input type="username" name="username" id="username" required=" " minlength="3" maxlength="12">
+						<br><br>
+					</div>
+
+					<div class="email">
+						<i class="fa fa-envelope"></i>
+						<label for="Email">Email Address</label><br>
+						<input type="email" name="email" id="Email" required=" " placeholder="example@example.com" maxlength="50">
+						<br><br>
+					</div>
+
+					<div class="password">
+						<i class="fa fa-lock"></i>
+						<label for="password">Password</label><br>
+						<input type="password" name="password" id="password" required=" " minlength="3" maxlength="8">
+						<br><br>
+					</div>
+
+					<div class="confirm-password">
+						<i class="fa fa-lock"></i>
+						<label for="confirm-password">Password Confirm</label><br>
+						<input type="password" name="password2" id="confirm-password" required=" " minlength="3" maxlength="8">
+						<br><br><br><br>
+					</div>
+<!-- CONFIRM -->
+						<button type="submit" name="register">CONFIRM</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

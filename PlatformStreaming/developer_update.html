@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Developer_upload</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link rel="shortcut icon" href="bg_logo/icon.png">
+
+		<link rel="stylesheet" type="text/css" href="syntax/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/developer_update.css">
+	</head>
+
+	<body>
+		<div class="top-bar">
+			<div class="logo">
+				<img src="bg_logo/Fil.mi.png" alt="Fil.mi" title="Fil.mi">
+				<h3>Fil.mi</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			
+			<div class="main-content">
+			
+				<form action=" " method="POST" enctype="multipart/form-data">
+<!-- FORM-LOGIN --> 
+						<h4>Upload Film</h4>
+						<br><br>
+					
+							<label for="judul">Judul Film</label><br>
+							<input type="text" name="judul" id="judul" >
+							<br><br>
+	<!-- Thumbnail -->					
+							<label for="foto">Thumb_film</label><br>
+							<input type="file" name="foto" id="foto">
+							<br><br>
+
+							<label for="genre">Genre [ACTION | COMEDY | HOROR]</label><br>
+							<input type="text" name="genre" id="genre" >
+							<br><br>
+	<!-- movie -->
+							<label for="movie">Movie_film</label><br>
+							<input type="file" name="movie" id="movie">
+							<br><br>
+
+							<label for="tahun">Tahun [yyyy]</label><br>
+							<input type="tahun" name="tahun" id="tahun" required="">
+							<br><br>
+							
+							<label for="country ">Country</label><br>
+							<input type="text" name="country" id="country " >
+
+							<br><br><br><br>
+
+<!-- FORM-CONFIRM-->	
+						<a href=""><button type="button" name="back">Back</button></a>
+						<button type="submit" name="upload">Upload</button>
+				</form>	
+			</div>	
+		</div>	
+	</body>
+</html>
