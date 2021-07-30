@@ -23,3 +23,6 @@ Disusun Oleh :
 ![image](https://user-images.githubusercontent.com/56226681/127677505-c55c034a-3962-4f8d-b023-165aa47494e9.png)
 2. Tampilan Setting Film
 ![image](https://user-images.githubusercontent.com/56226681/127677602-58e83e15-c606-4122-83ba-1f6375410b8f.png)
+
+My UI/UX Designs PlatformStreaming <br>
+https://www.figma.com/file/HvdhwO2bANTczIGOVvvSav/PlatformStreaming?node-id=0%3A1
